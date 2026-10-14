@@ -218,3 +218,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# Carpetas de trabajo: las carpetas SI se versionan (el proceso las necesita),
+# su contenido NO: son imagenes y datos sacados del juego.
+# ---------------------------------------------------------------------------
+extracted-images/**
+!extracted-images/
+!extracted-images/.gitkeep
+
+selected-images/**
+!selected-images/
+!selected-images/.gitkeep
+!selected-images/originals/
+!selected-images/originals/.gitkeep
+
+# Datos del juego, esten donde esten
+*.rgba
+*.adx
+*.iso
+texturas.log
+
+# Real-ESRGAN: lo descarga el paso 2 (unos 45 MB)
+realesrgan/
+*.zip
